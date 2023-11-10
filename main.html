@@ -1,16 +1,157 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+    <style>
+        body {
+            text-align: center;
+        }
 
+        h1 {
+            color: #333;
+        }
+
+        table.middle {
+            margin: auto;
+            border: 1px solid black;
+            border-spacing: 1px;
+        }
+
+        table.center {
+            text-align: center;
+        }
+
+        table.right {
+            text-align: right;
+        }
+
+        table.green {
+            background-color: lightgreen;
+        }
+
+        table.blue {
+            background-color: lightblue;
+        }
+
+        td, th {
+            padding: 1px;
+            border: 1px solid black;
+        }
+
+        #t21 {
+            background-color: lightgreen;
+        }
+
+        #t-image {
+            background-color: lightblue;
+        }
+
+        #t-image img {
+            width: 100%; /* Make the image fill its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <h1>HTML Assignment #3</h1>
+
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11" class="center">Cell 1</td>
+            <td id="t12">Cell 2</td>
+            <td id="t13" class="right">Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+        <tr>
+            <td>Cell 7</td>
+            <td>Cell 8</td>
+            <td>Cell 9</td>
+        </tr>
+    </table>
+
+    <!-- Table 2 -->
+    <table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6">Header Cell Spanning All Columns</td>
+        </tr>
+        <tr>
+            <td>Data 1,1</td>
+            <td>Data 1,2</td>
+            <td>Data 1,3</td>
+            <td>Data 1,4</td>
+            <td>Data 1,5</td>
+            <td>Data 1,6</td>
+        </tr>
+        <tr>
+            <td>Data 2,1</td>
+            <td>Data 2,2</td>
+            <td>Data 2,3</td>
+            <td>Data 2,4</td>
+            <td>Data 2,5</td>
+            <td>Data 2,6</td>
+        </tr>
+        <tr>
+            <td>Data 3,1</td>
+            <td>Data 3,2</td>
+            <td>Data 3,3</td>
+            <td>Data 3,4</td>
+            <td>Data 3,5</td>
+            <td>Data 3,6</td>
+        </tr>
+        <tr>
+            <td>Data 4,1</td>
+            <td>Data 4,2</td>
+            <td>Data 4,3</td>
+            <td>Data 4,4</td>
+            <td>Data 4,5</td>
+            <td>Data 4,6</td>
+        </tr>
+        <tr>
+            <td>Data 5,1</td>
+            <td>Data 5,2</td>
+            <td>Data 5,3</td>
+            <td>Data 5,4</td>
+            <td>Data 5,5</td>
+            <td>Data 5,6</td>
+        </tr>
+        <tr>
+            <td>Data 6,1</td>
+            <td>Data 6,2</td>
+            <td>Data 6,3</td>
+            <td>Data 6,4</td>
+            <td>Data 6,5</td>
+            <td>Data 6,6</td>
+        </tr>
+    </table>
+
+    <!-- Table 3 -->
+    <table id="table-3" class="middle blue">
+        <tr>
+            <td colspan="2" id="t-image">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Sample Image">
+            </td>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+        <tr>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+        <tr>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+    </table>
 
 </body>
-
 </html>
